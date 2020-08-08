@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-class InquiryMailer < ApplicationMailer
-  def send_mail(inquiry)
-    @inquiry = inquiry
+class ContactMailer < ApplicationMailer
+  def send_mail(contact)
+    @contact = contact
     mail = ENV['MY_PROFILE_MAIL']
     mail(
       from: 'system@example.com',

@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
-class InquiryMailerTest < ActionMailer::TestCase
+class ContactTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
