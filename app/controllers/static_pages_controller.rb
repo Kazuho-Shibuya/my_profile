@@ -6,6 +6,4 @@ class StaticPagesController < ApplicationController
   def portfolio; end
 
   def career; end
-
-  def contact; end
 end
