@@ -8,11 +8,14 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <% if flash[:success] %>
-      <div class="flash">
-        <%= flash[:success] %>
-      </div>
-    <% end %>
-    <%= yield %>
+    <main>
+      <% if flash[:success] %>
+        <div class="flash">
+          <%= flash[:success] %>
+        </div>
+      <% end %>
+      <%= yield %>
+    </main>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
