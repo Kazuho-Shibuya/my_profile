@@ -1,15 +1,27 @@
 <div class="center">
-  <div>
-    <h1>お問い合わせ</h1>
-    <%= form_for(@contact, url: contacts_new_path) do |f| %>
-      <%= render 'shared/error_messages', object: f.object %>
+  <h1>お問い合わせ</h1>
+  <%= form_for(@contact, url: contacts_new_path) do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <div>
       <%= f.label :name, 'お名前'%>
+    </div>
+    <div>
       <%= f.text_field :name %>
+    </div>
+    <div>
       <%= f.label :email, 'メールアドレス'%>
+    </div>
+    <div>
       <%= f.email_field :email %>
+    </div>
+    <div>
       <%= f.label :message, 'お問い合わせ内容'%>
+    </div>
+    <div>
       <%= f.text_area :message %>
+    </div>
+    <div>
       <%= f.submit "送信" %>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
 </div>
